@@ -13,7 +13,8 @@
 body {
     background: #fff;
     color: #babdc5;
-    font-family: "Open Sans", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
 }
 
 a {
@@ -174,7 +175,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-fixed {
-    background: rgba(13, 27, 80, 0.98);
+    background: rgba(175, 183, 211, 0.98);
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
@@ -287,16 +288,17 @@ h6 {
     padding: 8px;
     text-decoration: none;
     display: inline-block;
-    color: rgba(7, 47, 70, 0.8);
+    color: rgba(250, 246, 252, 0.8);
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 14px;
     outline: none;
+    background-color: #14311b;
 }
 
 .nav-menu .menu-active a,
 .nav-menu a:hover {
-    color: rgb(202, 140, 140);
+    color: rgb(170, 108, 108);
 }
 
 .nav-menu>li {
@@ -310,7 +312,7 @@ h6 {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #f82249;
+    background-color: #e96b82;
     visibility: hidden;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -546,11 +548,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro h1 {
-    color: #fff;
-    font-family: "Raleway", sans-serif;
-    font-size: 40px;
+    color: rgb(156, 154, 154);
+    font-family: calibri body;
+    font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
+    font-style: bold;
 }
 
 #intro h1 span {
@@ -558,7 +561,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro p {
-    color: #ebebeb;
+    color: #dddbdb;
     font-weight: 500;
     font-size: 20px;
 }
@@ -691,17 +694,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-    background: url("../img/about-bg.jpg");
+    background: url("../images-final/about.jpeg");
     background-size: cover;
     overflow: hidden;
     position: relative;
     color: #fff;
-    padding: 60px 0 40px 0;
+    padding: 10px 0 10px 0;
 }
 
 #about:before {
     content: "";
-    background: rgba(38, 39, 43, 0.8);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -713,21 +715,32 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: rgb(35, 87, 74);
+    color: rgb(37, 39, 145);
+    background-color: white;
+    margin-top: 5%;
 }
 
-#about h3 {
+
+/*#about h3 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
     color: rgb(35, 110, 69);
-}
+}*/
 
 #about p {
-    font-size: 14px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 20px;
-    color: #fff;
+    color: black;
+    background-color: rgb(236, 233, 233);
+    padding-left: 0%;
+    padding-bottom: 10%;
+}
+
+#about span {
+    color: red;
 }
 
 
@@ -949,8 +962,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #letschange:before {
     content: "";
-    background: rgb(245, 247, 250);
-    position: absolute;
+    background: white;
+    position: relative;
     bottom: 0;
     top: 0;
     left: 0;
@@ -958,10 +971,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #letschange h2 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #fff;
+    color: rgb(10, 8, 8);
 }
 
 #letschange h3 {
@@ -969,13 +982,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
-    color: #fff;
+    color: rgb(27, 26, 26);
 }
 
 #letschange p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(19, 14, 68);
+    margin-right: 10px;
+}
+
+#letschange p span {
+    color: #f82249;
 }
 
 
@@ -984,7 +1002,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #venue {
-    padding: 60px 0;
+    padding: 40px 0;
+    background: url("../22.jpg") top center no-repeat;
 }
 
 #venue .container-fluid {
@@ -993,21 +1012,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venue .venue-map iframe {
     width: 100%;
-    height: 100%;
+    height: 50%;
     min-height: 300px;
+    margin-top: 50%;
 }
 
 #venue .venue-info {
-    background: url("../22.jpg") top center no-repeat;
+    background: white;
     background-size: cover;
     position: relative;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
+    height: 30%;
+    margin-top: 25%;
 }
 
 #venue .venue-info:before {
     content: "";
-    background: rgba(13, 20, 41, 0.8);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -1016,14 +1037,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #venue .venue-info h3 {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 700;
-    color: #fff;
+    color: rgb(20, 19, 19);
 }
 
 #venue .venue-info p {
-    color: #fff;
+    color: rgb(20, 19, 19);
     margin-bottom: 0;
+    font-size: 16px;
 }
 
 #venue .venue-gallery-container {
@@ -1254,7 +1276,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe {
     padding: 60px;
-    background: url(../img/subscribe-bg.jpg) center center no-repeat;
+    background: white;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -1309,26 +1331,33 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #buy-tickets {
     padding: 60px 0;
+    background-color: white;
 }
 
 #buy-tickets .card {
-    border: none;
-    border-radius: 5px;
+    border: 1;
+    border-width: 3PX;
+    border-radius: 30px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    /*box-shadow: 5px 10px 25px 0 rgba(6, 25, 95, 0.1);*/
+    border-color: #4861c4;
 }
 
 #buy-tickets .card:hover {
-    box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+    box-shadow: 0 1px 35px 0 rgba(3, 23, 46, 0.2);
+}
+
+#buy-tickets h2 {
+    background-color: #ecedf1;
 }
 
 #buy-tickets .card hr {
-    margin: 25px 0;
+    margin: 30px 0;
 }
 
 #buy-tickets .card .card-title {
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 1px;
     font-weight: bold;
 }
